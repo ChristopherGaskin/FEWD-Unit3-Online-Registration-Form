@@ -323,8 +323,11 @@ footer p {
 
     input[id="zip"] {
         flex-basis: 39.25%;
-        margin-right: 39%;
+        margin-right: 51.5%;
+        max-width: 25%;
     }
+
+
 
     /* NEWSLETTER MEDIA QUERIES */
 
