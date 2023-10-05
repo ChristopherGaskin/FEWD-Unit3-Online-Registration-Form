@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../FEWD-Unit3-Online-Registration-Form/css/styles.css">
-    <title>Document</title>
+    <title>The Code Review Online Registration Form</title>
 </head>
 
 <body>
     <header>
         <h1>The Code Review</h1>
         <h2>Sign up for our newsletter</h2>
-        <h3>Get the latest news on how your code is doing right in your inbox</h3>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
     </header>
 
     <main>
@@ -34,20 +34,20 @@
                 </div>
                 <div>
                     <label for="number">Phone Number</label>
-                    <input type="tel" id="number" name="user-number">
+                    <input type="tel" id="number" name="user-number" placeholder="Ex. 123-456-7890">
                 </div>
                 <div>
                     <label for="address">Street Address</label>
-                    <input type="text" id="address" name="user-address">
+                    <input type="text" id="address" name="user-address" placeholder="Ex. 555 Main Street">
                 </div>
                 <div>
                     <label for="city">City</label>
-                    <input type="text" id="city" name="user-city">
+                    <input type="text" id="city" name="user-city" placeholder="Ex. Miami">
                 </div>
 
                 <div>
                     <label for="state">State</label>
-                    <select id="state" name="user-state">
+                    <select class="state-color" id="state" name="user-state">
                         <option>Choose State</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -104,42 +104,41 @@
                 </div>
                 <div>
                     <label for="zip">Zip Code</label>
-                    <input type="text" id="zip" name="user-zip-code">
+                    <input class="zip" type="text" id="zip" name="user-zip-code" placeholder="Ex. 12345">
                 </div>
             </fieldset>
 
             <fieldset>
                 <legend class="newsletter">Newsletter</legend>
                 <label class="checkbox-directions">Select the newsletters you would like to receive</label>
-                <div> <input type="checkbox" id="html" value="html" name="news"> <label for="html">HTML News</label><br>
+                <div class="html">
+                    <input type="checkbox" id="html" value="html" name="news"><label for="html">HTML News</label><br>
                 </div>
-                <div>
-                    <input type="checkbox" id="css" value="css" name="news"> <label for="css">CSS News</label><br>
+                <div class="css">
+                    <input type="checkbox" id="css" value="css" name="news"><label for="css">CSS News</label><br>
                 </div>
-                <div>
-                    <input type="checkbox" id="javascript" value="javascript" name="news"> <label
-                        for="javascript">Javascript News</label><br>
+                <div class="javascript">            
+                    <input type="checkbox" id="javascript" value="javascript" name="news"><label for="javascript">Javascript News</label><br>
                 </div>
-                <label class="newsletter-format">Newsletter Format</label>
-                <div>
-                    <input type="radio" id="html-format" value="html-format" name="format"><label for="html-format">HTML
-                        Format</label><br>
+                <label class="newsletter-format">Newsletter format</label>
+                <div class="html-format">
+                   <input type="radio" id="html-format" value="html-format" name="format"><label for="html-format">HTML</label><br>
                 </div>
-                <div>
-                    <input type="radio" id="plain-text" value="plain-text" name="format"> <label for="plain-text">Plain
-                        text</label><br>
+                <div class="plain-text">
+                  <input type="radio" id="plain-text" value="plain-text" name="format"><label for="plain-text">Plain text</label><br>
                 </div>
-                <div>
+                <div class="feedback">
                     <label for="feedback">Other topics you'd like to hear about</label>
-                    <textarea name="user-feedback" id="feedback" cols="30" rows="10"></textarea><br>
+                    <textarea class="textarea" id="feedback" name="user-feedback" placeholder="Ex. 'Treehouse Tech Degree programs'"></textarea><br>
                 </div>
                 <button type="submit">Sign Up</button>
             </fieldset>
         </form>
-    </main>
-    <footer>
-        <p>Copyrigth The Code Review</p>
-    </footer>
+      </main> 
+    
+      <footer>
+        <p>Copyright The Code Review</p>
+      </footer>
 </body>
 
 </html>
