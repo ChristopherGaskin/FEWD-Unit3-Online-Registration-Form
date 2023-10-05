@@ -10,7 +10,7 @@ body {
     margin: 0 auto;
 }
 
-/* HEADER */
+/* HEADER INFORMATION */
 
 header {
     display: flex;
@@ -391,7 +391,7 @@ footer p {
         margin-right: 0;
     }
 
-    /* FOOTER CONTENT */
+    /* FOOTER MEDIA QUERIES */
 
     footer {
         margin-top: 2rem;
